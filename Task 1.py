@@ -13,6 +13,7 @@ cpu_health = float(input("Please enter your CPU usage as a percentage (%):"))
 #here i have inserted a conditional statement, this is a rule that states a certain output for a certain condition
 #first I used an if statement to dictate the amount for the cpu being underutilised
 #Then because i used an if previously i used an elif statement to dictate what the other outcome would be if the input did not meet the requirements of the if statement.
+#I have used and to show a range of numbers this is telling the program that between to floats is the desired input to get that particular answer.
 #I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result
 if cpu_health <40:
     print ("Your CPU is underutilised!")
@@ -24,6 +25,7 @@ else:
 #here i have inserted a conditional statement, this is a rule that states a certain output for a certain condition
 #first I used an if statement to dictate the amount for the RAM being underutilised
 #Then because i used an if previously i used an elif statement to dictate what the other outcome would be if the input di not meet the requirements of the if statement.
+#I have used and to show a range of numbers this is telling the program that between to floats is the desired input to get that particular answer.
 #I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result
 print ("Now we will check your memory usage (RAM)")
 memory_usage = float(input("Please enter your memory usage in GB (Gigabytes):"))
