@@ -4,7 +4,6 @@
 #these are strings that let the user know what the use of the bot is.
 print ("Hello, Welcome to the TechComp system health monitoring bot!")
 print ("We will first check your CPU utilisation")
-
 #Here i create a variable for the cpu health, this allows the program to know what is being enetered into it
 #this also allows us to gain an input from the user and to rpint out the status message
 
@@ -18,9 +17,9 @@ cpu_health = float(input("Please enter your CPU usage as a percentage (%):"))
 if cpu_health <40:
     print ("Your CPU is underutilised!")
 elif cpu_health >=40 and cpu_health <=75:
-    print ("your CPU is overloaded, try and close some processes in task manager, or run a scan.")
+    print("Your CPU is being utilised optimally!")
 else:
-    print ("Your CPU is being utilised optimally!")
+    print("your CPU is overloaded, try and close some processes in task manager, or run a scan.")
 
 #here i have inserted a conditional statement, this is a rule that states a certain output for a certain condition
 #first I used an if statement to dictate the amount for the RAM being underutilised
