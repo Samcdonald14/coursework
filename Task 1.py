@@ -14,8 +14,10 @@ cpu_health = float(input("Please enter your CPU usage as a percentage (%):"))
 #Then because i used an if previously i used an elif statement to dictate what the other outcome would be if the input did not meet the requirements of the if statement.
 #I have used and to show a range of numbers this is telling the program that between to floats is the desired input to get that particular answer.
 #I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result
-if cpu_health <40:
-    print ("Your CPU is underutilised!")
+if cpu_health < 0 or cpu_health > 100:
+    print("You have entered an invalid percentage. Please enter a value between 0 and 100.")
+elif cpu_health < 40:
+        print("Your CPU is underutilised!")
 elif cpu_health >=40 and cpu_health <=75:
     print("Your CPU is being utilised optimally!")
 else:
