@@ -30,8 +30,10 @@ else:
 #I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result
 print ("Now we will check your memory usage (RAM)")
 memory_usage = float(input("Please enter your memory usage in GB (Gigabytes):"))
-if memory_usage <4:
-    print ("Your RAM is being underutilised.")
+if memory_usage < 0 or memory_usage > 64:
+    print (" you have entered an invalid value, could you please try again with a value between 0 and 64.")
+elif memory_usage < 4:
+        print("Your RAM is being underutilised.")
 elif memory_usage >= 4 and memory_usage <=8:
     print("Your RAM is being optimally utilised.")
 else:
