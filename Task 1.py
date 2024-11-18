@@ -31,11 +31,11 @@ memory_usage = float(input("Please enter your memory usage in GB (Gigabytes):"))
 if memory_usage <4:
     print ("Your RAM is being underutilised.")
 elif memory_usage >= 4 and memory_usage <=8:
-    print ("Your RAM is overloaded, please consider closing processes, tabs or programs on your computer.")
-else:
     print("Your RAM is being optimally utilised.")
+else:
+    print("Your RAM is overloaded, please consider closing processes, tabs or programs on your computer.")
 #Here i print out the cosing message for the program using the print command
 print("These are the results of your computer health check")
 print(f"Thank you for using the TechComp computer monitoring bot.")
 
-
+print ("test")
