@@ -7,7 +7,7 @@ print ("We will first check your CPU utilisation")
 #Here i create a variable for the cpu health, this allows the program to know what is being enetered into it
 #this also allows us to gain an input from the user and to rpint out the status message
 
-cpu_health = float(input("Please enter your CPU usage as a percentage (%):"))
+cpu_health = float(input("Please enter your CPU usage percentage as an integer."))
 
 #here i have inserted a conditional statement, this is a rule that states a certain output for a certain condition
 #first I used an if statement to dictate the amount for the cpu being underutilised
@@ -29,7 +29,7 @@ else:
 #I have used and to show a range of numbers this is telling the program that between to floats is the desired input to get that particular answer.
 #I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result
 print ("Now we will check your memory usage (RAM)")
-memory_usage = float(input("Please enter your memory usage in GB (Gigabytes):"))
+memory_usage = float(input("Please enter your memory usage (GB) as an integer:"))
 if memory_usage < 0 or memory_usage > 64:
     print (" you have entered an invalid value, could you please try again with a value between 0 and 64.")
 elif memory_usage < 4:
