@@ -9,9 +9,11 @@ print ("Welcome to the Moodsense chatbot,\nThis application will advise you what
 #I have used and to show a range of numbers this is telling the program that between to floats is the desired input to get that particular answer.
 #the else statement then congratulates the user on any other number they input because the two other statement already dictated the other scores between 1-10
 mood_score = float(input("Please enter your mood as a score from 1-10, we will then advise you what steps you should take!:"))
-if mood_score<3:
+if mood_score < 1 or mood_score > 10:
+    print("You have entered an invalid integer Please enter a value between 1 and 10.")
+elif mood_score<4:
     print ("Sorry you don't feel good, you should consider speaking to someone whether a friend, loved one or therapist.")
-elif mood_score >= 3 and mood_score<=8:
+elif mood_score >= 4 and mood_score<=7:
     print ("Your mood is okay, try to remember to look after yourself both physically and mentally")
 else:
     print ("Its great to hear that you are feeling so good!!")
