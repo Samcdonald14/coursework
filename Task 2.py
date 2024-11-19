@@ -13,7 +13,7 @@ if mood_score < 1 or mood_score > 10:
     print("You have entered an invalid integer Please enter a value between 1 and 10.")
 elif mood_score<4:
     print ("Sorry you don't feel good, you should consider speaking to someone whether a friend, loved one or therapist.")
-elif mood_score >= 4 and mood_score<=7:
+elif mood_score >= 4 and mood_score <= 7:
     print ("Your mood is okay, try to remember to look after yourself both physically and mentally")
 else:
     print ("Its great to hear that you are feeling so good!!")
