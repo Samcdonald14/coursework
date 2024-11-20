@@ -1,22 +1,24 @@
 
 
 #Here I have printed the welcome message to the program using the print command,
-#these are strings that let the user know what the use of the bot is.
+#These are strings that let the user know what the use of the bot is.
 print ("Hello, Welcome to the TechComp system health monitoring bot!")
 print ("We will first check your CPU utilisation")
-#Here i create a variable for the cpu health, this allows the program to know what is being enetered into it
-#this also allows us to gain an input from the user and to rpint out the status message
+#Here I create a variable for the CPU health, this allows the program to know what is being entered into it.
+#This also allows us to gain an input from the user and to print out the status message.
+
 
 cpu_health = float(input("Please enter your CPU usage percentage as an integer."))
 
-#here i have inserted a conditional statement, this is a rule that states a certain output for a certain condition
-#first I used an if statement to dictate the amount for the cpu being underutilised
-#Then because i used an if previously i used an elif statement to dictate what the other outcome would be if the input did not meet the requirements of the if statement.
+#Here I have inserted a conditional statement, this is a rule that states a certain output for a certain condition
+#First I used an if statement to dictate the amount for the CPU being underutilised
+#Then because I used an if previously I used an elif statement to dictate what the other outcome would be if the input did not meet the requirements of the if statement.
 #I have used and to show a range of numbers this is telling the program that between to floats is the desired input to get that particular answer.
-#I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result
-# I used a while loop in order to allow the user to try and enter another input if they choose a number that isn't between 0-100.
-#The loop will continue until the user inputs a value that correlates with the rule that is dictated within the loop
+#I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result.
+#I used a while loop in order to allow the user to try and enter another input if they choose a number that isn't between 0-100.
+#The loop will continue until the user inputs a value that correlates with the rule that is dictated within the loop.
 #Once the user inputs a correct value the loop will break and go on to the next stage of the program.
+
 while True:
     try:
         cpu_health = float(input("Please enter your CPU usage percentage as an integer (0-100): "))
@@ -33,11 +35,12 @@ elif cpu_health >=40 and cpu_health <=75:
 else:
     print("your CPU is overloaded, try and close some processes in task manager, or run a scan.")
 
-#here i have inserted a conditional statement, this is a rule that states a certain output for a certain condition
-#first I used an if statement to dictate the amount for the RAM being underutilised
-#Then because i used an if previously i used an elif statement to dictate what the other outcome would be if the input di not meet the requirements of the if statement.
+#Here I have inserted a conditional statement, this is a rule that states a certain output for a certain condition.
+#First I used an if statement to dictate the amount for the RAM being underutilised.
+#Then because I used an if previously I used an elif statement to dictate what the other outcome would be if the input did not meet the requirements of the if statement.
 #I have used and to show a range of numbers this is telling the program that between to floats is the desired input to get that particular answer.
-#I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result
+#I then use an else statement in order to dictate that anything outside of the if or elif will give a certain result.
+
 print("Now we will check your memory usage (RAM)")
 
 while True:
@@ -60,3 +63,4 @@ else:
 
 print("These are the results of your computer health check")
 print(f"Thank you for using the TechComp computer monitoring bot.")
+#These are the closing statements for the program after the checks have been completed.
