@@ -18,7 +18,8 @@ cpu_health = float(input("Please enter your CPU usage percentage as an integer."
 #I used a while loop in order to allow the user to try and enter another input if they choose a number that isn't between 0-100.
 #The loop will continue until the user inputs a value that correlates with the rule that is dictated within the loop.
 #Once the user inputs a correct value the loop will break and go on to the next stage of the program.
-
+#The value error is used in order to ensure that the user inputs an integer and not letters for example.
+#The value error exception is raised when the input cannot be interpreted as a float it is used in order to stop the user inputting strings or special characters.
 while True:
     try:
         cpu_health = float(input("Please enter your CPU usage percentage as an integer (0-100): "))
