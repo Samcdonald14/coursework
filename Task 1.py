@@ -42,7 +42,7 @@ print("Now we will check your memory usage (RAM)")
 
 while True:
     try:
-        memory_usage = float(input("Please enter your memory usage (GB) as a number:"))
+        memory_usage = float(input("Please enter your memory usage (GB) as an integer:"))
         if memory_usage < 0 or memory_usage > 64:
             print("You have entered an invalid value. Please enter a value between 0 and 64.")
         else:
